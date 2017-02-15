@@ -1,0 +1,16 @@
+
+name: ruby_install
+version: 0.0.1
+language: ruby
+description: Install dependencies use `bundle install`
+public: true
+tags:
+  - ruby
+  - install
+inputs:
+outputs:
+script_path: ./run.sh  
+  
+template: |  
+  
+  
