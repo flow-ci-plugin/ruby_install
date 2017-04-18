@@ -2,15 +2,18 @@
 name: ruby_install
 version: 0.0.1
 language: ruby
-description: Install dependencies use `bundle install`
+description: "会使用 bundle install 进行安装
+- 注意事项
+如果您在项目依赖中使用了私有项目依赖（比如 项目中使用了某个私有 Gem ,而这个 gem 的github 地址只有您可见），
+则需要您将flowci 项目中的deploy_key 放置到您github 中的账号里的SSH 列表中。
+在放置之前，您可能需要先在github的对应项目中先删除这个deploy_key,
+否则会因为不能重复添加一个key 导致添加失败。"
 public: true
 tags:
   - ruby
   - install
 inputs:
 outputs:
-script_path: ./run.sh  
-  
-template: |  
-  
-  
+script_path: ./run.sh
+
+template: |
